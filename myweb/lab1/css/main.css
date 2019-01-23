@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  header{
+    background: transparent !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    z-index: 5;
+  }
+  
+  header .logo
+  {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 700;
+    color: white;
+  }
+  header>div .logo{
+    float: left;
+    padding: 1em 3.5em 1em 0.5em;
+  }
+  
+  nav{
+    background: transparent !important;
+    padding: 1em 2.5em;
+    display: inline;
+    color: whilte;
+  }
+  nav a{
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    color: white;
+  }
+  
+  a{
+    transition: .3s all ease;
+    -webkit-transition: none;
+    -o-transition: none;
+    text-decoration: none;
+  
+  }
+  
+  figure .img{
+    max-width:100%;
+    height: auto;
+  }
+  
+  form{
+    text-align: right;
+  }
+  
+  body{
+    background-color: #F4F4F4;
+    margin: 0px;
+    padding: 0px;
+    font: 20px/1.5px 'Nunito' 'sans-serif';
+  }
+  
+  
+  /* Here is the Class style Declaration */
+  .bg-color{
+  background-color: #F8F9FA !important;
+  }
+  
+  .button{
+    background-color: #697e83; 
+    transition: .3s all ease; 
+    padding: 12px 30px; 
+    margin-top: 1em; 
+    text-transform: uppercase; 
+    letter-spacing: .15em;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover pseudo-classes{
+  color: #697e83;
+  background-color: white (#FFFFFF);
+  border: 2px solid #697e83;
+  }
+  
+  .copyright{
+    text-align: center;
+  }
+  
+  .feature{
+  text-align: center;
+  }
+  
+  .feature-image{
+  position: relative;
+  }
+  
+  .feature-image img{
+    display: inline-block;
+    width: 300px;
+    margin: 1em;
+  }
+  
+  figure .img{
+    max-width: 100%;
+    height: auto;
+  
+  }
+  /* this is my edition to make similar to the sample */
+  
+  
+  .footer{
+  float:left;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 4em;
+  }
+  
+  .heading{
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .heroimage{
+    background-image: url("../images/home.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .main-footer{
+    padding:4em 0em 0.9em 0em;
+    background: #F2F2F2;
+  }
+  
+  .main-padding{
+    padding: 7em 0em;
+  }
+  
+  .newsletter{
+    padding: 2em;
+    color: white(#FFFFFF);
+    background: #35424a;
+    overflow: hidden;
+  }
+  
+  .newletter h1{
+    float: left;
+  }
+  .newsletter input[type="email"]{
+    padding: 12px 30px;
+    height: 2.7em;
+    width: 250px;
+  }
+  
+  .newletter form{
+    float: left;
+    margin: 10px;
+  }
+  
+  .rooms-pic-1{
+    max-width: 30%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 1em;
+  }
+  
+  .rooms-pic-1 figure{
+    float: left;
+  }
+  
+  .rooms-body{
+    background: white(#FFFFFF) !important;
+    padding: 30px;
+    border: 1px solid #E6E6E6;
+    border-top: none;
+  }
+  
+  .sideleft{
+   width: 30%;
+   float: left;
+   text-align: center; 
+  }
+  .sideright{
+    width:60%;
+    float:right;
+  }
+  
+  .sub-heading{
+  text-transform: uppercase;
+  font-size: 12px;
+  color:gray (#cccccc);
+  letter-spacing: .1em;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+  
