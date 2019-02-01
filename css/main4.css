@@ -1,0 +1,43 @@
+.box{
+    width:500px;
+    height:200px;
+    background: linear-gradient(240deg, green, yellow);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* linear and radial */
+
+.box1{
+    width:500px;
+    height:200px;
+    background: radial-gradient(circle, red, black);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.box2{
+    width:500px;
+    height:200px;
+    background: linear-gradient(to right, #8360c3, #2ebf91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.box3{
+    width:500px;
+    height:200px;
+    background: tomato;
+    margin-bottom: 10px;
+    position: relative;
+    transition-property: background-color width border-radius;
+
+    transition-duration: 4s 2s 5s;
+    transition-delay: 2s;
+    transition-timing-function: ease-in-out;
+}
+.box3:hover{
+    background-color: #009fff; 
+    width: 300px;
+    border-radius: 50%;
+}

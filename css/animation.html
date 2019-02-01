@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animations</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background: tomato;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation: name duration timing-function delay iteration-count direction fill-mode
+        }
+
+        @keyframes bounce {
+
+            /* from {background-color: tomato;}
+        to {background:blue;} */
+            0% {
+                background-color: tomato;
+                top: 0px;
+                left: 20px;
+            }
+
+            25% {
+                background-color: midnightblue;
+                top: 0px;
+                left: 200px;
+            }
+
+            50% {
+                background-color: coral;
+                top: 200px;
+                left: 200px;
+            }
+
+            75% {
+                background-color: skyblue;
+                top: 200px;
+                left: 200px;
+            }
+
+            100% {
+                background-color: crimson;
+                top: 200px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

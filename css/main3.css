@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* this make the nav to be flexbox */
+ul.menu{
+    display: flex;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.cards img{
+    max-width: 20vw;
+    margin:10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.34), 0 2px 4px rgba(0,0,0,0.2);   
+}
