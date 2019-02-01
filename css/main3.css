@@ -5,11 +5,13 @@
 ul li{
     text-decoration: none;
     list-style: none;
+    padding: 2em;
 }
 
 /* this make the nav to be flexbox */
 ul.menu{
     display: flex;
+    padding: 2em;
 }
 
 .cards{
