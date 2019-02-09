@@ -2,17 +2,20 @@
     box-sizing: border-box;
 }
 
-ul li{
+nav ul{
     text-decoration: none;
-    list-style: none;
-    padding: 2em;
+    list-style-type: none;
+    display:flex;
 }
 
-/* this make the nav to be flexbox */
-ul.menu{
-    display: flex;
-    padding: 2em;
+nav ul li{
+    flex: 1 1 0;
 }
+/* this make the nav to be flexbox */
+nav ul li a{
+    text-align: center;
+display: block;
+padding: 10px;}
 
 .cards{
     display: flex;

@@ -1,9 +1,6 @@
-/* selector & declaration */
-/* selector {Propername:value} */
-
-/* css variables - root & var() */
-/* Color Name, RGB */
-
+/* Author Justice Banson */
+/* Modified Author - Joohyun Kim */
+/* Stylesheet for lesson5 */
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 :root{
     --main-color:#05a081;
@@ -14,6 +11,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin:0;
     padding: 0;
@@ -25,44 +23,38 @@ header{
     width: 100%;
     position:absolute; /*fixed;*/
     z-index: 5;
+    display: grid;
+
 }
+
 header nav{
     background: transparent !important;
 }
-nav{
-    text-align: center;
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+nav ul li{
+    flex:1;
 }
 nav a{
-    display: block;
-    padding: 1.5em 2em;
-    color: var(--test-color);
-    text-align: center;
     text-decoration: none;
-}
-
-nav ul{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: none;
-    color: var(--test-color);
-}
-
-nav ul li{
-    flex: 1;
-    text-decoration: none;
-}
-
-p{
     color:var(--text-color);
+    display: block;
+    padding:1em;
+    text-align: center;
+    opacity: 0.8;/* New */ 
+    transition: all 0.3s;/* New */ 
 }
-
-h4{
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
+nav a:hover{
+    opacity: 1;/* New */ 
+    color: var( --main-color);/* New */ 
 }
-
-
+a:hover{
+    text-decoration: none !important;
+    color: var(--text-color);
+}
 .banner{
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -73,22 +65,34 @@ main{
     padding: 4em 0;
     background-color: var(--background-color);
 }
+.main-container{
+    display: flex;/* Modified */    
+}
+
 .floatleft{
-    width: 30%;
-    float: left;
+    flex: 1;/* Modified */   
+    padding:1em;
 }
 .floatright{
-    width: 60%;
-    float: right;
+    flex: 2;/* Modified */   
+    padding:1em;
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4 [col] 100px);
+    grid-template-rows: repeat(3 [row] auto);
+    padding: 1rem;
+}
+.box-container{
+    display: flex;/* Modified */
 }
 .box{
     text-align: center;
-    width: 28%;
-    float: left;
     padding: 2em 0;
     margin: 1em;
 }
-.bg-color{
+.section-color{
     color:var(--text-color);
     background-color: var(--bg-2);
     overflow: hidden;
@@ -109,19 +113,44 @@ footer{
     padding: 2.6em;
     text-align: center;
 }
+.label, #toggle{
+    display: none;
+}
 
-
-
-@media(max-width:700px){
-    nav ul{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .fas{
-        font-size: 26px;
-        color: var(--text-color);
-        float: right;
-        width: 30px;
-    }
+/* Media Queries For 760px */
+@media(max-width:760px){
+   nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    width: 80%;
+    top:3em;
+    background: rgba(0, 0, 0, 0.5);  
+   }
+   .icon:checked+.menu{
+       display: block;
+   }
+   /* Modified */   .fa-bars{
+       font-size: 26px;
+       color: var(--text-color);
+       float: right;
+       width:30px;
+   }
+   .label{
+       display: block;
+       cursor: pointer;
+   }
+   .main-container{
+       display: flex;/* New */   
+       flex-direction: column;   /* New */   
+   }
+   .box-container{
+       display: flex;/* New */ 
+       flex-direction: column;/* New */ 
+   }
+   .box{
+    padding:0;/* New */ 
+    margin:0; /* New */ 
+   }
 }
